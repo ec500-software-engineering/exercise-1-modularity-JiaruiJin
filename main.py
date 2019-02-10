@@ -4,9 +4,9 @@ import prediction_engine
 import notification_manager
 import notifications_sender
 import realtime_data_processor
+import DatabaseManager
 from multiprocessing import Queue
 from common_types import Contact
-from database import InMemorySimpleDatabase
 
 
 def main(cmd_args):
@@ -24,7 +24,7 @@ def main(cmd_args):
         notifications_sender.MockTelegramSender(),
         notifications_sender.MockEmailSender()
     )
-    database = InMemorySimpleDatabase()
+    database = DatabaseManager()
     ai_engine = prediction_engine.PredictionEngine(10, notification_man, database)
     pulse_reader = sensor_readers.BloodPulseSensorReader(1, data_proc_queue, tty, database)
     oxy_reader = sensor_readers.BloodOxygenSensorReader(4, data_proc_queue, tty, database)
