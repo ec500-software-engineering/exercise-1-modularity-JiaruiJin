@@ -24,7 +24,7 @@ def main(cmd_args):
         notifications_sender.MockTelegramSender(),
         notifications_sender.MockEmailSender()
     )
-    database = DatabaseManager()
+   # database = DatabaseManager()
     ai_engine = prediction_engine.PredictionEngine(10, notification_man, database)
     pulse_reader = sensor_readers.BloodPulseSensorReader(1, data_proc_queue, tty, database)
     oxy_reader = sensor_readers.BloodOxygenSensorReader(4, data_proc_queue, tty, database)
