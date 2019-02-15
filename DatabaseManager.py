@@ -10,7 +10,7 @@
 #  data = input("Enter a data to update: ")
 #  date= input("Enter a time to update: ")
 #  mycursor.execute("INSERT INTO oxygen(time, num) "
-                   "VALUES (%s, %s)"%(repr(date),repr(data)))
+#                   "VALUES (%s, %s)"%(repr(date),repr(data)))
 #  conn.commit()
 #  #close database
 #  conn.close()
@@ -29,7 +29,7 @@
 #  data = input("Enter a data to update: ")
 #  date= input("Enter a time to update: ")
 #  mycursor.execute("INSERT INTO pulse(time, num) "
-                   "VALUES (%s, %s)"%(repr(date),repr(data)))
+#                   "VALUES (%s, %s)"%(repr(date),repr(data)))
 #  conn.commit()
 #  #close database
 #  conn.close()
