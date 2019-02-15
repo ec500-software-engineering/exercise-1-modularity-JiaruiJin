@@ -4,7 +4,7 @@ import prediction_engine
 import notification_manager
 import notifications_sender
 import realtime_data_processor
-import database
+from database import InMemorySimpleDatabase
 from multiprocessing import Queue
 from common_types import Contact
 
