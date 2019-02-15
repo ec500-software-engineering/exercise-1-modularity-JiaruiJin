@@ -1,25 +1,26 @@
-class Databasemanager():
-# /usr/bin/env python3
-import pymysql
+#class Databasemanager():
+## /usr/bin/env python3
+#import pymysql
 
-def get_input_num():
-    num = int(input("Enter a number: "))
-    return num
+#def get_input_num():
+#    num = int(input("Enter a number: "))
+#    return num
 
-def update_oxygen(mycursor):
-  data = input("Enter a data to update: ")
-  date= input("Enter a time to update: ")
-  mycursor.execute("INSERT INTO oxygen(time, num) "
+#def update_oxygen(mycursor):
+#  data = input("Enter a data to update: ")
+#  date= input("Enter a time to update: ")
+#  mycursor.execute("INSERT INTO oxygen(time, num) "
                    "VALUES (%s, %s)"%(repr(date),repr(data)))
-  conn.commit()
-  #close database
-  conn.close()
+#  conn.commit()
+#  #close database
+#  conn.close()
 
-def update_pressure(mycursor):
-  data = input("Enter a data to update: ")
-  date= input("Enter a time to update: ")
-  mycursor.execute("INSERT INTO pressure(time, num) "
-                   "VALUES (%s, %s)"%(repr(date),repr(data)))
+#def update_pressure(mycursor):
+#  data = input("Enter a data to update: ")
+#  date= input("Enter a time to update: ")
+#  mycursor.execute("INSERT INTO pressure(time, num) "
+#                   "VALUES (%s, %s)"%(repr(date),repr(data)))
+'''
   conn.commit()
   #close database
   conn.close()
@@ -97,3 +98,4 @@ elif (data==5):
     query_pressure(mycursor)
 elif (data==6):
     query_pulse(mycursor)
+'''
