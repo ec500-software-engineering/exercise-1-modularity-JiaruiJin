@@ -20,7 +20,7 @@
 #  date= input("Enter a time to update: ")
 #  mycursor.execute("INSERT INTO pressure(time, num) "
 #                   "VALUES (%s, %s)"%(repr(date),repr(data)))
-'''
+"""
   conn.commit()
   #close database
   conn.close()
@@ -98,4 +98,4 @@ elif (data==5):
     query_pressure(mycursor)
 elif (data==6):
     query_pulse(mycursor)
-'''
+"""
